@@ -40,8 +40,12 @@ public class Library {
         this.version = version;
     }
 
+    public String getApplicationName() {
+        return String.format("%s:%s", groupId, artifact);
+    }
+
     @Override
     public String toString() {
-        return String.format("{ groupId: %s, artifact: %s, version: %s }", groupId, artifact, version);
+        return String.format("{ applicationName: %s, groupId: %s, artifact: %s, version: %s }", getApplicationName(), groupId, artifact, version);
     }
 }

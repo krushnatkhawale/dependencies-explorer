@@ -30,6 +30,10 @@ public class BuildInfo {
         this.applicationName = applicationName;
     }
 
+    public void setApplicationName() {
+        this.applicationName = String.format("%s:%s", groupId, artifact);
+    }
+
     public String getGroupId() {
         return groupId;
     }
