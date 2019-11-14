@@ -1,4 +1,4 @@
-package com.dependency.explorer;
+package com.dependency.explorer.controller;
 
 import com.dependency.explorer.model.BuildInfo;
 import com.dependency.explorer.service.BuildInfoService;
