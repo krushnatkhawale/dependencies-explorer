@@ -453,6 +453,7 @@ var ConceptMap = function(chartElementId, infoElementId, dataJson) {
     }
 
     function m(Y) {
+        console.log( Y);
         var X = f.selectAll("path").data(Y);
         X.enter().append("path").attr("d", function(Z) {
             return v([
@@ -479,7 +480,7 @@ var ConceptMap = function(chartElementId, infoElementId, dataJson) {
         }).attr("stroke-width", function(X) {
             return l(X, "1.5px", "2.5px", "1px")
         }).attr("opacity", function(X) {
-            return l(X, 0.4, 0.75, 0.3)
+            return l(X, 0.4, 0.75, 0)
         }).sort(function(Y, X) {
             if (!k.node) {
                 return 0
